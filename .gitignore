@@ -1,0 +1,6 @@
+# Gebaute Erweiterung
+*.xpi
+
+# Editor-/OS-Dateien
+.DS_Store
+Thumbs.db

@@ -1,0 +1,41 @@
+{
+  "manifest_version": 3,
+  "name": "Ticket Search",
+  "version": "1.1.1",
+  "description": "Erkennt Ticket-Nummern im Betreff einer E-Mail und zeigt ein Icon zum Suchen aller E-Mails mit dieser Ticket-Nummer.",
+
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "ticketsearch@tbplugin.drehpunkt.de",
+      "strict_min_version": "128.0"
+    }
+  },
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "permissions": [
+    "messagesRead",
+    "accountsRead",
+    "storage"
+  ],
+
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  },
+
+  "message_display_action": {
+    "default_icon": {
+      "16": "icons/ticket-inactive-16.svg",
+      "32": "icons/ticket-inactive-32.svg"
+    },
+    "default_title": "Nach dieser Ticket-Nummer suchen",
+    "default_label": ""
+  },
+
+  "icons": {
+    "48": "icons/ticket-active-32.svg"
+  }
+}
